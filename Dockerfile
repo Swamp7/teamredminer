@@ -6,6 +6,6 @@ RUN apt update \
     && tar -xf teamredminer-v0.10.21-linux.tgz \
     && rm teamredminer-v0.10.21-linux.tgz
 
-WORKDIR /teamredminer
+WORKDIR /teamredminer-v0.10.21-linux
 
 ENTRYPOINT ["./teamredminer"]
