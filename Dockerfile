@@ -1,7 +1,9 @@
 FROM rocm/rocm-terminal:6.0.2
 
-RUN apt update \ 
-    && apt -y install wget \
+RUN sudo apt-get update \ 
+    && apt -y install \
+    && build-essential \
+    && wget \
     && wget https://github.com/todxx/teamredminer/releases/download/v0.10.21/teamredminer-v0.10.21-linux.tgz \
     && tar -xf teamredminer-v0.10.21-linux.tgz \
     && rm teamredminer-v0.10.21-linux.tgz
