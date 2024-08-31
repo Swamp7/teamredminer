@@ -1,7 +1,5 @@
 FROM rocm/rocm-terminal:6.0.2
 
-RUN rm /etc/apt/sources.list.d/cuda.list
-
 RUN sudo apt update \ 
     && apt -y install wget \
     && wget https://github.com/todxx/teamredminer/releases/download/v0.10.21/teamredminer-v0.10.21-linux.tgz \
